@@ -1,0 +1,75 @@
+md-toolbar h2 {
+    font-family: 'Cabin', sans-serif;
+    text-align:center;
+    text-shadow: 5px 5px 5px #000000;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    margin:0.2em;
+    opacity: 0.95;
+    z-index:-1;
+}
+md-sidenav button {
+    float:right;
+    padding:20px;
+}
+md-toolbar {
+    background: rgba(0,0,0,.6);
+    position:fixed;
+    z-index:999;
+}
+
+md-toolbar button {
+    font-size:2em;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px #000000;
+    opacity:0.95;
+    height:100%;
+}
+md-toolbar button md-icon {
+    font-size:1em;
+    width:1em;
+    height:1em;
+}
+
+
+.menu-title {
+  
+}
+.menu-title img {
+  width:150px;
+  height:63px;
+}
+
+@media (max-width:992px){
+    md-sidenav{
+        width:100%;
+    }
+    md-toolbar h2 {
+        position: static;
+        font-size: 1em;
+    }
+    md-toolbar button {
+        font-size:1em;
+    }
+    md-sidenav-container {
+        position: absolute;
+    }
+}
+@media (min-width: 992px) and (max-width:1200px){
+    md-toolbar h2 {
+        font-size: 1.2em;
+    }
+    md-toolbar button {
+        font-size:1.5em;
+    }
+}
+@media (min-width: 1200px){
+    md-toolbar h2 {
+        font-size: 2em;
+    }
+    md-toolbar button {
+        font-size:2em;
+    }
+}
