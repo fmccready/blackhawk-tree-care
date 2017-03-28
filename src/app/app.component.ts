@@ -8,10 +8,16 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Blackhawk Tree Care';
   isMobile = true;
   mode = 'over';
   constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer){
+    let fbParams: {
+      appId: '1345121855544157',
+      xfbml: true,
+      version: 'v2.6'
+    };
+
     iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('assets/images/menu.svg')
@@ -19,7 +25,6 @@ export class AppComponent {
   }
   ngOnInit(){
     let width = window.screen.width;
-    console.log('init');
     if (width > 992){
       this.mode = 'side';
     }

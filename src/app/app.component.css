@@ -60,6 +60,7 @@ md-toolbar button md-icon {
 @media (min-width: 992px) and (max-width:1200px){
     md-toolbar h2 {
         font-size: 1.2em;
+        margin-top:.8em;
     }
     md-toolbar button {
         font-size:1.5em;

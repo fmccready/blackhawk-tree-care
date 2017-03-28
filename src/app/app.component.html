@@ -12,12 +12,11 @@
   </div>
 </md-toolbar>
 
-<md-sidenav-container>
+<md-sidenav-container id="sidenav-container">
   <md-sidenav class="side-nav" #sidenav mode="{{mode}}">
-    <app-menu></app-menu>
+    <app-menu (closeMenu)="sidenav.close()"></app-menu>
     <button md-button (click)="sidenav.toggle()">Close <md-icon>close</md-icon></button>
   </md-sidenav>
-  
   <div class="content">
     <app-home></app-home>
   </div>

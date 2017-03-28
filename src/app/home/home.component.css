@@ -1,5 +1,5 @@
 .banner {
-    background-image: url('../../assets/images/stock-photo-forest-trees-nature-green-wood-sunlight-backgrounds-95030080.jpg');
+    background-image: url('../../assets/images/banner-background.jpg');
     background-size:cover;
     background-position:center;
     height:100%;
@@ -7,86 +7,60 @@
 .banner h2 {
     font-family: 'Cabin', sans-serif;
     text-align:center;
-    margin:0.2em;
+    margin:0.5em;
     text-shadow: 5px 5px 5px #000000;
 }
-.banner button {
+.banner a {
     padding:0.5em 1em;
     opacity:.85;
 }
-.banner button md-icon {
+.banner a md-icon {
     font-size:1em;
     height: 1em;
     width: 1em;
 }
 .banner .center {
     position:absolute;
-    top:40%;
+    top:25%;
     left:0;
     right:0;
     text-align:center;
 }
-.container {
-    margin:0 20%;
+.banner img {
+    margin:auto;
+    display:block;
+    max-width:80%;
 }
-.container p {
-    margin-left:1em;
+.banner object {
+    display:block;
+    margin:auto;
+    max-width:30%;
+    margin-bottom:2em;
 }
 @media (max-width:992px){
+    .banner object {
+        max-width:75%;
+    }
     .banner h2 {
         font-size:2em;
     }
-    .banner button {
-        font-size:1em;
-    }
-    .container {
-        margin:0;
-    }
-    .container h2 {
-        font-size:2em;
-    }
-    .container h3 {
-        font-size:1.25em;
-        margin-left:1em;
+    .banner a {
+        font-size:1.5em;
     }
 }
 @media (min-width: 992px) and (max-width:1200px){
     .banner h2 {
         font-size: 4em;
     }
-    .banner button {
+    .banner a {
         font-size:1.5em;
     }
-    .container {
-        margin:0 20%;
-    }
-    .container h2 {
-        font-size:2em;
-    }
-    .container h3 {
-        font-size:1.5;
-        margin-left:1em;
-    }
-
 }
 @media (min-width: 1200px){
     .banner h2 {
         font-size: 6em;
     }
-    .banner button {
+    .banner a {
         font-size:2em;
-    }
-    .container {
-        margin:0 30%;
-    }
-    .container h2 {
-        font-size:3em;
-    }
-    .container h3 {
-        font-size:1.75em;
-        margin-left:1em;
-    }
-    .container p {
-        font-size:1.2em;
     }
 }
