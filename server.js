@@ -27,8 +27,7 @@ app.all('/', (req, res) => {
 });
 */
 
-app.listen(process.env.port || 3000, function(){
-});
+app.listen(process.env.port || 3000);
 app.use(function(err, req, res, next){
     console.error(err.stack);
     res.status(500).send('Something broke!');
