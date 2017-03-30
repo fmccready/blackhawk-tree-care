@@ -7,6 +7,13 @@ h3 {
 h4 {
     margin-bottom:.25em;
 }
+h5 {
+    margin-bottom:.25em;
+}
+ul {
+    margin-left:3em;
+}
+
 @media (max-width:992px){
     .container {
         margin:0;
@@ -21,9 +28,16 @@ h4 {
         font-size:1.2em;
         margin-left:1.5em;
     }
+    .container h5 {
+        font-size:1.0em;
+        margin-left:1.5em;
+    }
     .container p {
         margin-left: 2em;
         margin-right:2em;
+    }
+    ul > li {
+        font-size:1em;
     }
 }
 @media (min-width: 992px) and (max-width:1200px){
@@ -39,7 +53,14 @@ h4 {
     .container h4 {
         font-size:1.75em;
     }
+    .container h5 {
+        font-size:1.1em;
+        margin-left:1.5em;
+    }
     .container p {
+        font-size:1.1em;
+    }
+    ul > li {
         font-size:1.1em;
     }
 }
@@ -56,7 +77,14 @@ h4 {
     .container h4 {
         font-size:2em;
     }
+    .container h5 {
+        font-size:1.2em;
+        margin-left:1.5em;
+    }
     .container p {
+        font-size:1.2em;
+    }
+    ul > li {
         font-size:1.2em;
     }
 }

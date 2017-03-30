@@ -27,7 +27,7 @@ app.all('/', (req, res) => {
 });
 */
 
-app.listen(3000, function(){
+app.listen(process.env.port || 3000, function(){
     console.log('listening on port 3000');
 });
 app.use(function(err, req, res, next){
