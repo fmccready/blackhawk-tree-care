@@ -1,4 +1,4 @@
-console.log(process.env.port);
+console.log(process.env.PORT);
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -28,7 +28,7 @@ app.all('/', (req, res) => {
 });
 */
 
-app.listen(process.env.port || 3000);
+app.listen(process.env.PORT || 3000);
 app.use(function(err, req, res, next){
     console.error(err.stack);
     res.status(500).send('Something broke!');
