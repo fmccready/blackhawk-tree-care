@@ -4,6 +4,7 @@
   "engines": {
     "node": "6.9.1"
   },
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
