@@ -25,7 +25,6 @@ export class AppComponent {
   }
   ngOnInit(){
     let width = window.screen.width;
-    console.log(width);
     if (width > 992){
       this.mode = 'side';
     }
