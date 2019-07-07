@@ -21,7 +21,7 @@ import { ServicesComponent } from './services/services.component';
     ServicesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
     HttpModule,
     MaterialModule
