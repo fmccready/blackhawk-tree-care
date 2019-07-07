@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   @Output() closeMenu = new EventEmitter();
-  private goTo(id){
+  goTo(id){
     var target = document.getElementById(id),
       container = document.getElementsByClassName('mat-sidenav-content'),
       top = target.offsetTop;
