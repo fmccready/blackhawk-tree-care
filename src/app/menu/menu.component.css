@@ -13,7 +13,7 @@
 .mobile-menu h2 {
     display:block;
 }
-.mobile-menu md-icon {
+.mobile-menu mat-icon {
     font-size:1em;
     height:1em;
     width:1em;

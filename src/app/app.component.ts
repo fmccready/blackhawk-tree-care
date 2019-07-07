@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MdIconRegistry } from '@angular/material';
+import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Blackhawk Tree Care';
   isMobile = true;
   mode = 'over';
-  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer){
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer){
     let fbParams: {
       appId: '1345121855544157',
       xfbml: true,

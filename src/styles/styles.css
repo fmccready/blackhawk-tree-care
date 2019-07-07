@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Anton|Arimo|Cabin|Exo');
 
-html, body, md-sidenav-container, .content {
+html, body, mat-sidenav-container, .content {
   margin: 0;
   width: 100%;
   height: 100%;

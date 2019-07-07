@@ -1,6 +1,6 @@
-<md-toolbar>
-  <button *ngIf="isMobile === true" class="menu-toggle-mobile" md-button (click)="sidenav.toggle()">
-      <md-icon>menu</md-icon>Menu
+<mat-toolbar>
+  <button *ngIf="isMobile === true" class="menu-toggle-mobile" mat-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>Menu
   </button>
   <div class="menu-title">
     <h2>Blackhawk Tree Care</h2>
@@ -9,14 +9,14 @@
   <div *ngIf="isMobile === false" class="desktop-menu">
     <app-menu></app-menu>
   </div>
-</md-toolbar>
+</mat-toolbar>
 
-<md-sidenav-container id="sidenav-container">
-  <md-sidenav class="side-nav" #sidenav mode="{{mode}}">
+<mat-sidenav-container id="sidenav-container">
+  <mat-sidenav class="side-nav" #sidenav mode="{{mode}}">
     <app-menu (closeMenu)="sidenav.close()"></app-menu>
-    <button md-button (click)="sidenav.toggle()">Close <md-icon>close</md-icon></button>
-  </md-sidenav>
+    <button mat-button (click)="sidenav.toggle()">Close <mat-icon>close</mat-icon></button>
+  </mat-sidenav>
   <div class="content">
     <app-home></app-home>
   </div>
-</md-sidenav-container>
+</mat-sidenav-container>
